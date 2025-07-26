@@ -1,0 +1,166 @@
+{
+  "output_format": "mp4",
+  "width": 1920,
+  "height": 1080,
+  "duration": 20,
+  "fill_color": "#ffffff",
+  "elements": [
+    {
+      "name": "soundtrack2",
+      "type": "audio",
+      "track": 1,
+      "time": 0,
+      "duration": null,
+      "dynamic": true,
+      "source": "./src/data/audio/soundtrack2.mp3",
+      "volume": "100%",
+      "afade_in": 0,
+      "afade_in_duration":1.5,
+      "afade_out": 20, 
+      "afade_out_duration":3,     
+      "duckings":[
+        {
+        "volume": "20%",
+        "start": 3,
+        "end":6
+        },
+        {
+        "volume": "20%",
+        "start": 10,
+        "end":13
+
+         }
+        ]
+    },
+
+    {
+      "name": "test1",
+      "type": "audio",
+      "track": 2,
+      "time": 2,
+
+      "source": "./src/data/audio/test1.mp3",
+      "volume": "150%",
+      "afade_in": 3,
+      "afade_out": 7
+  
+    },
+
+    {
+      "name": "test2",
+      "type": "audio",
+      "track": 3,
+      "time": 10,
+
+      "source": "./src/data/audio/test2.mp3",
+      "volume": "150%",
+      "afade_in": 10
+  
+  
+    },
+{
+
+      "name": "Slide_0",
+      "type": "composition",
+      "track": 3,
+      "time": 0,
+      "duration": 7,
+      "dynamic": true,
+      "elements": [
+        {
+          "type": "shape",
+          "track": 1,
+          "time": 0,
+          "dynamic": true,
+          "x": "10%",
+          "y": "10%",
+          "fill_color": "rgba(102,152,125,0.85)",
+          "path": "M 50, 50 m 0, -25 a 25,25 0 1,0 0,50 a 25,25 0 1,0 0,-50"
+        },
+        {
+          "name": "aereo",
+          "type": "image",
+          "track": 2,
+          "time": 0,
+          "dynamic": true,
+          "fit":"contain",
+          "color_overlay": "rgba(0,0,0,0.1)",
+          "source": "./src/json/img/aereo.jpeg"
+        }
+       
+      ]
+},
+    {
+      "name": "Intro",
+      "type": "composition",
+      "track": 4,
+      "time": 7,
+      "duration": 15,
+      "dynamic": true,
+      "fill_color": "rgba(102,152,125,0.07)",
+      "elements": [
+        
+        {
+          "type": "shape",
+          "track": 2,
+          "time": 0,
+          "duration": 2.5,
+          "dynamic": true,
+          "x": "0%",
+          "y": "50%",
+          "width":500,
+          "height":500,
+          "fill_color": "rgba(102,152,125,0.85)",
+          "path": "M -592.2786 -999.608 L 592.2786 -999.608 L 592.2786 999.608 L -592.2786 999.608 L -592.2786 349.8628 L -592.2786 -999.608 Z"
+        },
+        {
+          "name": "Logo",
+          "type": "image",
+          "track": 3,
+          
+          "duration": 2.5,
+          "dynamic": true,
+          
+          "animations": [
+            {
+              "time": 0,
+              "duration": 1,
+              "easing": "quadratic-out",
+              "type": "circle",
+              "direction":"open"
+            }
+          ],
+          "source": "./src/json/img/vertical.jpg",
+          "fit": "contain"
+       
+        },
+        {
+          "name": "txt1",           
+  "type": "text"  ,             
+  "time": 2,           
+  "duration":10,
+  "width":500,          
+  "height":500,                  
+  "font_Color":"red",            
+  "text":"CIAO A TUTTI HO CREATO UNA STRINGA LUNGA PER TESTARE LE DIMENSIONI DEL BOX DI TESTO E SE FUNZIONA TUTTO QUELLO CHE HO SCRITTO. SPERIAMO CHE FUNZIONI BENE!"  ,        
+  "font_family": "Roboto-Black",  
+  "font_size": 50,    
+  "line_height":"10%",
+  "text_box_alignment":"center",
+  "x_alignment": "center",
+  "shadow_x":"",
+  "shadow_y":"",
+  "shadow_color":"white",
+  "animations":[
+    {
+      "type":"Text-Reveal",
+      "split":"word",
+      "duration": 4
+    }
+  ]
+
+        }
+      ]
+    }
+  ]
+}

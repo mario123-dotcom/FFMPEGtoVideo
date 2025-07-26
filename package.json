@@ -1,0 +1,35 @@
+{
+  "name": "scriptpertirocinio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.5.3",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@svgdotjs/svg.js": "^3.2.4",
+    "@types/express": "^4.17.21",
+    "@types/express-fileupload": "^1.5.1",
+    "canvas": "^2.11.2",
+    "express": "^4.19.2",
+    "express-fileupload": "^1.5.1",
+    "ffmpeg": "^0.0.4",
+    "image-size": "^1.1.1",
+    "multer": "^1.4.5-lts.1",
+    "phantomjs": "^2.1.7",
+    "sharp": "^0.33.5",
+    "svg-path-bbox": "^2.0.0",
+    "svgpath": "^2.6.0"
+  }
+}

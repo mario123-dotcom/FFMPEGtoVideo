@@ -1,0 +1,362 @@
+{
+    "output_format": "mp4",
+    "name":"videoTEST",
+    "width": 1080,
+    "height": 1920,
+    "duration": 25,
+    "fill_color": "#ffffff",
+    "elements": [
+      {
+        "name": "soundtrack2",
+        "type": "audio",
+        "track": 1,
+        "time": 0,
+        "duration": null,
+        "dynamic": true,
+        "source": "./src/data/audio/soundtrack2.mp3",
+        "volume": "100%",
+        "afade_in": 0,
+        "afade_in_duration":1.5,
+        "afade_out": 25, 
+        "afade_out_duration":3,     
+        "duckings":[
+          {
+          "volume": "70%",
+          "start": 1.5,
+          "end":4.5
+          },
+          {
+          "volume": "70%",
+          "start": 7.5,
+          "end":11
+  
+           },
+           {
+            "volume": "70%",
+            "start": 15.5,
+            "end":20
+    
+             }
+          ]
+      },
+  
+      {
+        "name": "macchina da scrivere",
+        "type": "audio",
+        "track": 2,
+        "time": 2,
+        "source": "./src/data/audio/tastiera.mp3",
+        "volume": "100%",
+        "afade_in": 1.5,
+        "afade_out": 3.5
+    
+      },
+  
+      {
+        "name": "vynilpub",
+        "type": "audio",
+        "track": 3,
+        "time": 8,
+        "source": "./src/data/audio/vinilpub.mp3",
+        "volume": "110%",
+        "afade_in": 8
+    
+    
+      },
+
+      {
+        "name": "jamsession",
+        "type": "audio",
+        "track": 4,
+        "time": 16,
+        "source": "./src/data/audio/jamsession.mp3",
+        "volume": "110%"
+        
+    
+      },
+  {
+  
+        "name": "composition1",
+        "type": "composition",
+        "track": 3,
+        "time": 0,
+        "duration": 6,
+        "dynamic": true,
+        "elements": [
+          {
+            "name": "moto",
+            "type": "image",
+            "track": 1,
+            "time": 0,
+            "dynamic": true,
+            "fit":"fixed",
+            "width":1080,
+            "height":1920,
+            "source": "./src/data/img/moto.jpg",
+            "animations": [
+              {"type":"pan",
+               "transition":false,
+               "end_scale": "150%"}
+            ]
+            
+          },
+          {
+            "type": "shape",
+            "track": 2,
+            "time": 2,
+            "dynamic": true,
+            "x": "0%",
+            "y": "0%",
+            "fill_color": "rgba(31, 31, 15, 0.8)",
+            "path": "M 0,0 L 0,1920  L 1080,1920 L 1080,0 Z",
+            "width":1080,
+            "height":1920,
+            "animations": [
+                {
+                  "time": 2,
+                  "duration": 0.5,
+                  "type": "wipe",
+                  "direction":"up",
+                  "transition":true
+                }]          
+            
+          },
+      
+          {
+            "name": "TESTO1",           
+    "type": "text"  ,             
+    "time": 2,           
+    "duration":6,
+    "width":580,          
+    "height":960,                  
+    "font_Color":"white",            
+    "text":"HAI NOSTALGIA DEGLI ANNI 70 80 90?"  ,        
+    "font_family": "Roboto-BoldItalic",  
+    "font_size": 55,    
+    "line_height":"15%",
+    "text_box_alignment":"center",
+    "x_alignment": "center",
+    "shadow_x":"",
+    "shadow_y":"",
+    "shadow_color":"white",
+    "animations":[
+    {
+      "type":"Text-Reveal",
+      "split":"word",
+      "duration": 2
+    }
+  
+          
+            ]
+          }
+         
+         
+        ]
+  },
+  {
+  
+    "name": "composition2",
+    "type": "composition",
+    "track": 4,
+    "time": 6,
+    "duration": 8,
+    "dynamic": true,
+    "elements": [
+      {
+        
+          "type": "shape",
+          "track": 1,
+          "time": 0,
+          "dynamic": true,
+          "x": "0%",
+          "y": "0%",
+          "fill_color": "rgba(31, 31, 15, 0.8)",
+          "path": "M 0,0 L 0,1920  L 1080,1920 L 1080,0 Z",
+          "width":1080,
+          "height":1920  
+                 
+          
+        },
+        {
+        "name": "vinili",
+        "type": "image",
+        "track": 2,
+
+        "time": 0,
+        "dynamic": true,
+        "fit":"fixed",
+        "width":1080,
+        "height":1920,
+        "color_overlay": "rgba(31, 31, 15, 0.5)",
+        "source": "./src/data/img/vinili.jpg",
+        "animations": [
+              {"type":"pan",
+               "transition":false,
+               "reversed": true,
+               "start_scale": "150%",
+              "duration":6}
+            ]
+         
+      },
+      {
+    "type": "text",             
+    "time": 2,
+    "track":3,
+    "duration":6,
+    "width":580,          
+    "height":960,    
+    "x": "30,5%",
+    "y": "5%",              
+    "font_color":"white",            
+    "text":"Vieni a trovarci al"  ,        
+    "font_family": "Roboto-Thin",  
+    "font_size": 55,    
+    "line_height":"15%",
+    
+    "x_alignment": "center",
+    "shadow_x":"",
+    "shadow_y":"",
+    "shadow_color":"white",
+    "animations":[
+    {
+      "type":"Text-Reveal",
+      "split":"line",
+      "duration": 2
+    }
+  
+     
+      
+        ]
+      },
+      {"type": "text"  ,             
+       "time": 4,  
+       "track":4,         
+    "duration":6,
+    "width":580,          
+    "height":960,    
+    "x": "30,5%",
+    "y": "5%",              
+    "font_color":"white",            
+    "text":"THE VYNYL PUB"  ,        
+    "font_family": "Roboto-BoldItalic",  
+    "font_size": 100,    
+    "line_height":"15%",
+    "text_box_alignment":"center",
+    "x_alignment": "center",
+    "shadow_x":"2%",
+    "shadow_y":"2%",
+    "shadow_color":"red",
+    "animations":[
+    {
+      "type":"Text-Reveal",
+      "split":"line",
+      "duration": 2
+    }
+  
+     
+      
+        ]
+      }
+     
+     
+    ]
+},
+
+
+
+
+
+
+
+
+{
+  
+  "name": "composition3",
+  "type": "composition",
+  "track": 4,
+  "time": 14,
+  "duration": 8,
+  "dynamic": true,
+  "elements": [
+   
+      {
+      "name": "marshall",
+      "type": "image",
+      "track": 1,
+
+      "time": 0,
+      "dynamic": true,
+      "fit":"fixed",
+      "width":1080,
+      "height":1920,
+      "source": "./src/data/img/marshall.jpg",
+      "animations": [
+              {"type":"pan",
+              "transition":false,
+              "duration": 6}
+            ]
+       
+    },
+    {
+      
+      "type": "shape",
+      "track": 2,
+      "time": 0,
+      "dynamic": true,
+      "fill_color": "rgba(31, 31, 15, 0.8)",
+      "path": "M 500,0 L 1000,500 L 500,1000 L 0,500 Z",
+      "width":1000,
+      "height":1000,
+      "x":"3.7%",
+      "y":"23.9%"
+             
+      
+    },
+    {
+  "type": "text",             
+  "time": 2,
+  "track":3,
+  "duration":8,
+  "width":500,          
+  "height":960,    
+  "text_box_alignment":"center",
+  "font_color":"orange",            
+  "text":"Tutti i giovedi JAM SESSION ore 21-00"  ,        
+  "font_family": "Roboto-BoldItalic",  
+  "font_size": 65,    
+  "line_height":"15%",
+  "x_alignment": "center",
+  "shadow_x":"2%",
+  "shadow_y":"2%",
+  "shadow_color":"white",
+  "animations":[
+  {
+    "type":"Text-Reveal",
+    "split":"line",
+    "duration": 2
+  }
+]
+    }
+   
+   
+   
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
+
+}
+    
+   

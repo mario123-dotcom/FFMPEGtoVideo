@@ -1,0 +1,373 @@
+{
+  "output_format": "mp4",
+  "name": "DIEM2024",
+  "width": 1920,
+  "height": 1080,
+  "duration": 40,
+  "fill_color": "#ffffff",
+  "elements": [
+
+    { "type": "audio",
+      "name": "soundtrack1",
+      "track": 1,
+      "time": 2,
+      "source": "./src/data/audio/soundtrack1.mp3",
+      "volume": "100%",
+      "afade_in": 4,
+      "afade_in_duration": 1.5,
+      "afade_out": 36,
+      "afade_out_duration": 3,
+      "duckings": [
+        {
+          "volume": "20%",
+          "start": 4,
+          "end": 40
+        }
+      ]
+    },
+    { "type": "audio",
+      "name": "macchina da scrivere",
+      "track": 2,
+      "time": 0,
+      "source": "./src/data/audio/tastiera.mp3",
+      "volume": "100%",
+      "afade_in": 1.5,
+      "afade_out": 3.5
+    },
+    { "type": "audio",
+      "name": "descrizione diem",
+      "track": 2,
+      "time": 4.5,
+      "source": "./src/data/audio/speakerdiem1.mp3",
+      "volume": "120%"
+    },
+    { "type": "audio",
+      "name": "descrizione diem2",
+      
+      "track": 2,
+      "time": 22.5,
+      "source": "./src/data/audio/speakerdiem2.mp3",
+      "volume": "120%"
+    },
+    { "type": "audio",
+      "name": "final2",
+      "track": 2,
+      "time": 36,
+      "source": "./src/data/audio/final2.mp3",
+      "volume": "120%"
+    },
+
+
+
+    { "type": "composition",
+      "name": "slide1-bianco",
+      "track": 3,
+      "time": 0,
+      "duration": 4.5,
+      "elements": [
+        {
+          "type": "shape",
+          "track": 2,
+          "time": 0,
+          "x": "0%",
+          "y": "0%",
+          "fill_color": "rgba(255, 255, 255, 1)",
+          "path": "M 0,0 L 1920,0 L 1920,1080 L 0,1080 Z",
+          "width": 1920,
+          "height": 1080
+        },
+        { "name": "testo",
+          "type": "text",
+          "time": 2,
+          "duration": 6,
+          "width": 900,
+          "height": 600,
+          "font_color": "#36347C",
+          "text": "SEI ALLA RICERCA DI UN PERCORSO  MAGISTRALE ?",
+          "font_family": "FontsFree-Net-BlippoBlack",
+          "font_size": 65,
+          "line_height": "15%",
+          "text_box_alignment": "center",
+          "text_alignment": "left",
+          "animations": [
+            {
+              "type": "Text-Reveal",
+              "split": "word",
+              "duration": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    { "type": "composition",
+      "name": "slide2-logoDIEM",
+      "track": 4,
+      "time": 4.5,
+      "duration": 4,
+      "elements": [
+        {
+          "type": "shape",
+          "track": 2,
+          "time": 0,
+          "x": "0%",
+          "y": "0%",
+          "fill_color": "rgba(255, 255, 255, 1)",
+          "path": "M 0,0 L 1920,0 L 1920,1080 L 0,1080 Z",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "name": "diem",
+          "type": "image",
+          "track": 1,
+          "time": 1,
+          "fit": "contain",
+          "source": "./src/data/img/diem.png",
+          "animations": [
+            {
+              "time": 0.5,
+              "duration": 1,
+              "type": "fade",
+              "transition": true
+            }
+          ]
+        }
+      ]
+    },
+    { "type": "composition",
+      "name": "composition3-campus",
+      "track": 5,
+      "time": 8.5,
+      "duration": 5,
+      "elements": [
+        {
+          "name": "campus",
+          "type": "image",
+          "track": 0,
+          "time": 0,
+          "fit": "fixed",
+          "width": 1920,
+          "height": 1080,
+          "color_overlay": "rgba(200, 200, 200, 1)",
+          "source": "./src/data/img/campus.png",
+          "animations": [
+            {
+              "type": "pan",
+              "duration": 6,
+              "transition": false,
+              "end_scale": "150%"
+            }
+          ]
+        },
+        {
+          "name": "testo1",
+          "type": "text",
+          "time": 0,
+          "duration": 5,
+          "width": 1000,
+          "height": 450,
+          "font_color": "#FFFFFF",
+          "text": "DIPARTIMENTO D'ECCELLENZA",
+          "font_family": "Roboto-Black",
+          "font_size": 60,
+          "line_height": "15%",
+          "text_box_alignment": "center",
+          "text_alignment": "left",
+          "fade": true,
+          "fade_duration": 2
+        }
+      ]
+    },
+    {"type": "composition",
+      "name": "composition4-AI",
+      
+      "track": 6,
+      "time": 13.5,
+      "duration": 7,
+      "elements": [
+        {
+          "name": "ai",
+          "type": "image",
+          "track": 0,
+          "time": 0,
+          "fit": "fixed",
+          "width": 1920,
+          "height": 1080,
+          "color_overlay": "rgba(200, 200, 200, 1)",
+          "source": "./src/data/img/AI.png",
+          "animations": [
+            {
+              "type": "pan",
+              "duration": 6,
+              "transition": false,
+              "start_scale": "150%",
+              "reversed": true
+            }
+          ]
+        },
+        {
+          "name": "testo1",
+          "type": "text",
+          "time": 1,
+          "duration": 6,
+          "width": 1400,
+          "height": 400,
+          "font_color": "#FFFFFF",
+          "text": "2,6 ANNI IN MEDIA PER CONSEGUIRE LA LAUREA\n (La media nazionale è di 3 anni)",
+          "font_family": "Roboto-Black",
+          "font_size": 55,
+          "line_height": "20%",
+          "text_alignment": "center",
+          "text_box_alignment": "center",
+          "fade": true,
+          "fade_duration": 1
+        }
+      ]
+    },
+    { "type": "composition",
+      "name": "composition4-corsi",
+      "track": 7,
+      "time": 20.5,
+      "duration": 15,
+      "elements": [
+        {
+          "name": "computer",
+          "type": "image",
+          "track": 1,
+          "time": 0,
+          "dynamic": true,
+          "fit": "fixed",
+          "width": 1920,
+          "height": 1080,
+          "source": "./src/data/img/computer.jpg",
+          "animations": [
+            {
+              "type": "pan",
+              "transition": false,
+              "end_scale": "150%"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "track": 2,
+          "time": 2,
+          "dynamic": true,
+          "fit": "fixed",
+          "width": 1920,
+          "height": 1080,
+          "source": "./src/data/img/computerengineering.png",
+          "animations": [
+            {
+              "time": 2,
+              "duration": 0.5,
+              "type": "wipe",
+              "direction": "up",
+              "transition": true
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "track": 2,
+          "time": 10,
+          "dynamic": true,
+          "fit": "fixed",
+          "width": 1920,
+          "height": 1080,
+          "source": "./src/data/img/digitalhealt.png",
+          "animations": [
+            {
+              "time": 10,
+              "duration": 0.5,
+              "type": "wipe",
+              "direction": "right",
+              "transition": true
+            }
+          ]
+        },
+        {
+          "name": "testo1",
+          "type": "text",
+          "time": 2.5,
+          "duration": 10,
+          "width": 1500,
+          "height": 800,
+          "font_color": "#FFFFFF",
+          "text": "INGEGNERIA INFORMATICA ",
+          "font_family": "Roboto-Black",
+          "font_size": 65,
+          "line_height": "10%",
+          "text_box_alignment": "top center",
+          "text_alignment": "center",
+          "animations": [
+            {
+              "type": "Text-Reveal",
+              "split": "line",
+              "duration": 1.5
+            }
+          ]
+        },
+        {
+          "name": "testo1",
+          "type": "text",
+          "time": 4.5,
+          "duration": 10,
+          "width": 1900,
+          "height": 600,
+          "font_color": "#36347C",
+          "text": "\n ARTIFICIAL INTELLIGENCE AND INTELLIGENT ROBOTICS\n AUTOMATION AND CONTROL SYSTEMS\n CYBERSECURITY\n ENTERPRISE SOFTWARE ARCHITECTURES\n IOT AND EMBEDDED SYSTEMS\n MULTIMEDIA SYSTEMS AND APPLICATIONS",
+          "font_family": "Roboto-Black",
+          "font_size": 45,
+          "line_height": "10%",
+          "text_alignment": "center",
+          "x": "18%",
+          "y": "12,5%",
+          "animations": [
+            {
+              "type": "Text-Reveal",
+              "split": "line",
+              "duration": 2.5
+            }
+          ]
+        },
+        {
+          "name": "testo1",
+          "type": "text",
+          "time": 10,
+          "duration": 6,
+          "width": 1700,
+          "height": 800,
+          "font_color": "#FFFFFF",
+          "text": "INFORMATION ENGINEERING FOR DIGITAL MEDICINE",
+          "font_family": "Roboto-Black",
+          "font_size": 65,
+          "line_height": "10%",
+          "text_box_alignment": "top center",
+          "text_alignment": "center",
+          "fade": true,
+          "fade_duration": 1
+        }
+      ]
+    },
+    { "type": "composition",
+      "name": "unisa",
+      
+      "track": 8,
+      "time": 35.5,
+      "duration": 2.5,
+      "elements": [
+        {
+          "name": "unisa",
+          "type": "image",
+          "track": 0,
+          "time": 0,
+          "fit": "fixed",
+          "width": 1920,
+          "height": 1080,
+          "source": "./src/data/img/finale.png"
+        }
+      ]
+    }
+  ]
+}
